@@ -1,22 +1,19 @@
 package net.zestyblaze.goldencows.client.renderer;
 
+import net.minecraft.client.render.entity.CowEntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory;
-import net.minecraft.client.render.entity.MobEntityRenderer;
+import net.minecraft.entity.passive.CowEntity;
 import net.minecraft.util.Identifier;
 import net.zestyblaze.goldencows.GoldenCows;
-import net.zestyblaze.goldencows.GoldenCowsClient;
-import net.zestyblaze.goldencows.client.model.AppleCowEntityModel;
-import net.zestyblaze.goldencows.entities.AppleCow;
 
-public class AppleCowEntityRenderer extends MobEntityRenderer<AppleCow, AppleCowEntityModel> {
+public class AppleCowEntityRenderer extends CowEntityRenderer {
 
     public AppleCowEntityRenderer(EntityRendererFactory.Context context) {
-        super(context, new AppleCowEntityModel(context.getPart(GoldenCowsClient.MODE_APPLECOW_LAYER)), 0.5f);
+        super(context);
     }
 
     @Override
-    public Identifier getTexture(AppleCow entity) {
+    public Identifier getTexture(CowEntity cowEntity) {
         return new Identifier(GoldenCows.MOD_ID, "textures/entity/apple_cow/apple_cow.png");
     }
-
 }
