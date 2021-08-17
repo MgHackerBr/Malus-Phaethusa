@@ -20,7 +20,7 @@ public class EntityInit {
 
     public static void register() {
 
-        FabricDefaultAttributeRegistry.register(APPLE_COW, AppleCow.createMobAttributes());
+        FabricDefaultAttributeRegistry.register(APPLE_COW, AppleCow.createCowAttributes());
 
     }
 
