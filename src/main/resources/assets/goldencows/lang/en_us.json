@@ -1,6 +1,19 @@
 {
-  "itemGroup.goldencows.main_tab": "GoldenCows",
+  "itemGroup.goldencows.main_tab": "Malus Phaethusa",
+
   "item.goldencows.golden_wheat": "Golden Wheat",
   "item.goldencows.enchanted_golden_wheat": "Enchanted Golden Wheat",
-  "entity.goldencows.apple_cow": "Apple Cow"
+  "item.goldencows.golden_bread": "Golden Bread",
+  "item.goldencows.enchanted_golden_bread": "Enchanted Golden Bread",
+
+  "item.goldencows.apple_cow_spawn_egg": "Apple Cow Spawn Egg",
+  "item.goldencows.golden_apple_cow_spawn_egg": "Golden Apple Cow Spawn Egg",
+
+  "entity.goldencows.apple_cow": "Apple Cow",
+  "entity.goldencows.golden_apple_cow": "Golden Apple Cow",
+
+  "item.goldencows.golden_wheat.tooltip": "Wheat infused with gold and a little magic",
+  "item.goldencows.enchanted_golden_wheat.tooltip": "Wheat infused with gold and magic power",
+  "item.goldencows.golden_bread.tooltip": "Bread infused with gold and a little magic",
+  "item.goldencows.enchanted_golden_bread.tooltip": "Bread infused with gold and magic power"
 }

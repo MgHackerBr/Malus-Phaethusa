@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "goldencows:golden_wheat",
+    "goldencows:enchanted_golden_wheat",
+    "goldencows:golden_bread",
+    "goldencows:enchanted_golden_bread"
+  ]
+}
