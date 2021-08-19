@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "id": "goldencows",
+  "id": "malusphaethusa",
   "version": "${version}",
 
-  "name": "Golden Cows!",
+  "name": "Malus Phaethusa",
   "description": "A Small Fabric Mod That Brings The Golden Apple Cows to Fabric Minecraft!",
   "authors": [
-    "ZestyBlaze"
+    "ZestyBlaze",
+    "I Don't Care"
   ],
   "contact": {
     "homepage": "https://github.com/ZestyBlaze/Golden-Cows",
@@ -19,10 +20,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.zestyblaze.goldencows.GoldenCows"
+      "net.zestyblaze.malusphaethusa.MalusPhaethusa"
     ],
     "client": [
-      "net.zestyblaze.goldencows.GoldenCowsClient"
+      "net.zestyblaze.malusphaethusa.MalusPhaethusaClient"
     ]
   },
   "depends": {

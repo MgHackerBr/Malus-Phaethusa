@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "goldencows:golden_wheat",
-    "goldencows:enchanted_golden_wheat",
-    "goldencows:golden_bread",
-    "goldencows:enchanted_golden_bread"
+    "malusphaethusa:golden_wheat",
+    "malusphaethusa:enchanted_golden_wheat",
+    "malusphaethusa:golden_bread",
+    "malusphaethusa:enchanted_golden_bread"
   ]
 }
