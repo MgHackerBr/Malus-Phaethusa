@@ -23,7 +23,7 @@
       "net.zestyblaze.malusphaethusa.MalusPhaethusa"
     ],
     "client": [
-      "net.zestyblaze.malusphaethusa.MalusPhaethusaClient"
+      "net.zestyblaze.malusphaethusa.client.MalusPhaethusaClient"
     ]
   },
   "depends": {

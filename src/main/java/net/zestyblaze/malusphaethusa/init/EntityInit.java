@@ -18,6 +18,7 @@ public class EntityInit {
             new Identifier(MalusPhaethusa.MOD_ID, "apple_cow"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, AppleCow::new)
                     .dimensions(EntityDimensions.fixed(0.9f, 1.4f))
+                    .trackRangeBlocks(10)
                     .build()
     );
 
@@ -26,6 +27,7 @@ public class EntityInit {
             new Identifier(MalusPhaethusa.MOD_ID, "golden_apple_cow"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, GoldenAppleCow::new)
                     .dimensions(EntityDimensions.fixed(0.9f, 1.4f))
+                    .trackRangeBlocks(10)
                     .build()
     );
 

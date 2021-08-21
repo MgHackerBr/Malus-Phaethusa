@@ -1,5 +1,6 @@
 package net.zestyblaze.malusphaethusa.entities;
 
+import net.minecraft.client.render.entity.feature.SkinOverlayOwner;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.CowEntity;
 import net.minecraft.entity.passive.PassiveEntity;
@@ -17,7 +18,7 @@ import net.zestyblaze.malusphaethusa.init.EntityInit;
 import net.zestyblaze.malusphaethusa.items.GoldenWheat;
 import org.jetbrains.annotations.NotNull;
 
-public class GoldenAppleCow extends CowEntity {
+public class GoldenAppleCow extends AppleCow implements SkinOverlayOwner {
     public GoldenAppleCow(EntityType<? extends CowEntity> entityType, World world) {
         super(entityType, world);
     }
@@ -41,5 +42,9 @@ public class GoldenAppleCow extends CowEntity {
         } else {
             return super.interactMob(player, hand);
         }
+    }
+    @Override
+    public boolean shouldRenderOverlay() {
+        return true;
     }
 }

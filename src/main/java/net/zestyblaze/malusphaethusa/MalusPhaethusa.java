@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
+import net.zestyblaze.malusphaethusa.init.BlockInit;
 import net.zestyblaze.malusphaethusa.init.EntityInit;
 import net.zestyblaze.malusphaethusa.init.ItemInit;
 import net.zestyblaze.malusphaethusa.init.SpawnInit;
@@ -24,5 +25,6 @@ public class MalusPhaethusa implements ModInitializer {
 		EntityInit.register();
 		SpawnInit.register();
 		ItemInit.register();
+		BlockInit.register();
 	}
 }
