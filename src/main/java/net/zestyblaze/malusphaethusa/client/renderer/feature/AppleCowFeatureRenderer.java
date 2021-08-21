@@ -56,6 +56,8 @@ public class AppleCowFeatureRenderer<T extends CowEntity> extends FeatureRendere
     private void renderApple(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, boolean renderAsModel, BlockRenderManager blockRenderManager, BlockState appleState, int overlay, BakedModel appleModel) {
         if (renderAsModel) {
             blockRenderManager.getModelRenderer().render(matrices.peek(), vertexConsumers.getBuffer(RenderLayer.getOutline(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE)), appleState, appleModel, 0.0F, 0.0F, 0.0F, light, overlay);
+        } else {
+            blockRenderManager.renderBlockAsEntity(appleState, matrices, vertexConsumers, light, overlay);
         }
     }
 

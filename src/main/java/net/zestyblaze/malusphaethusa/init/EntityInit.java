@@ -9,6 +9,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.zestyblaze.malusphaethusa.MalusPhaethusa;
 import net.zestyblaze.malusphaethusa.entities.AppleCow;
+import net.zestyblaze.malusphaethusa.entities.EnchantedGoldenAppleCow;
 import net.zestyblaze.malusphaethusa.entities.GoldenAppleCow;
 
 public class EntityInit {
@@ -31,9 +32,19 @@ public class EntityInit {
                     .build()
     );
 
+    public static final EntityType<EnchantedGoldenAppleCow> ENCHANTED_GOLDEN_APPLE_COW = Registry.register(
+            Registry.ENTITY_TYPE,
+            new Identifier(MalusPhaethusa.MOD_ID, "enchanted_golden_apple_cow"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, EnchantedGoldenAppleCow::new)
+                    .dimensions(EntityDimensions.fixed(0.9f, 1.4f))
+                    .trackRangeBlocks(10)
+                    .build()
+    );
+
     public static void register() {
         FabricDefaultAttributeRegistry.register(APPLE_COW, AppleCow.createCowAttributes());
         FabricDefaultAttributeRegistry.register(GOLDEN_APPLE_COW, GoldenAppleCow.createCowAttributes());
+        FabricDefaultAttributeRegistry.register(ENCHANTED_GOLDEN_APPLE_COW, EnchantedGoldenAppleCow.createCowAttributes());
     }
 
 }
