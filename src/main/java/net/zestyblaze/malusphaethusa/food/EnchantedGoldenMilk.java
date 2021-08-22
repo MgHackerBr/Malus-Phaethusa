@@ -22,16 +22,16 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class GoldenMilk {
+public class EnchantedGoldenMilk {
 
-    public static final GoldenMilkItem GOLDEN_MILK = new GoldenMilkItem(new FabricItemSettings()
+    public static final EnchantedGoldenMilkItem ENCHANTED_GOLDEN_MILK = new EnchantedGoldenMilkItem(new FabricItemSettings()
             .rarity(Rarity.RARE)
             .maxCount(1)
             .group(MalusPhaethusa.MAIN_TAB)
     );
 
-    public static class GoldenMilkItem extends MilkBucketItem {
-        public GoldenMilkItem(Settings settings) {
+    public static class EnchantedGoldenMilkItem extends MilkBucketItem {
+        public EnchantedGoldenMilkItem(Settings settings) {
             super(settings);
         }
         @Override
@@ -45,16 +45,16 @@ public class GoldenMilk {
             }
             if (!world.isClient) {
                 user.clearStatusEffects();
-                user.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1200, 0, false, false));
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1800, 1, false, false));
+                user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100, 0, false, false));
             }
             return stack.isEmpty() ? new ItemStack(Items.BUCKET) : stack;
         }
         @Override
         public void appendTooltip(ItemStack itemStack, World world, @NotNull List<Text> tooltip, TooltipContext tooltipContext) {
-            tooltip.add(new TranslatableText("item.malusphaethusa.golden_milk.tooltip")
+            tooltip.add(new TranslatableText("item.malusphaethusa.enchanted_golden_milk.tooltip")
                     .formatted(Formatting.DARK_GRAY)
             );
         }
     }
-
 }

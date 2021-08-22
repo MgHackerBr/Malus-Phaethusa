@@ -6,16 +6,20 @@
   "item.malusphaethusa.golden_bread": "Golden Bread",
   "item.malusphaethusa.enchanted_golden_bread": "Enchanted Golden Bread",
   "item.malusphaethusa.golden_milk": "Golden Milk Bucket",
+  "item.malusphaethusa.enchanted_golden_milk": "Enchanted Golden Milk Bucket",
 
   "item.malusphaethusa.apple_cow_spawn_egg": "Apple Cow Spawn Egg",
   "item.malusphaethusa.golden_apple_cow_spawn_egg": "Golden Apple Cow Spawn Egg",
+  "item.malusphaethusa.enchanted_golden_apple_cow_spawn_egg": "Enchanted Golden Apple Cow Spawn Egg",
 
   "entity.malusphaethusa.apple_cow": "Apple Cow",
   "entity.malusphaethusa.golden_apple_cow": "Golden Apple Cow",
+  "entity.malusphaethusa.enchanted_golden_apple_cow": "Enchanted Golden Apple Cow",
 
   "item.malusphaethusa.golden_wheat.tooltip": "Wheat infused with gold and a little magic",
   "item.malusphaethusa.enchanted_golden_wheat.tooltip": "Wheat infused with gold and magic power",
   "item.malusphaethusa.golden_bread.tooltip": "Bread infused with gold and a little magic",
   "item.malusphaethusa.enchanted_golden_bread.tooltip": "Bread infused with gold and magic power",
-  "item.malusphaethusa.golden_milk.tooltip": "Milk taken from a cow that shines"
+  "item.malusphaethusa.golden_milk.tooltip": "Milk taken from a cow that shines",
+  "item.malusphaethusa.enchanted_golden_milk.tooltip": "Milk taken from a cow infused with magic"
 }

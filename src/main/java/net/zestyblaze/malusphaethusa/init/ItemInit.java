@@ -4,12 +4,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.zestyblaze.malusphaethusa.MalusPhaethusa;
 import net.zestyblaze.malusphaethusa.food.EnchantedGoldenBread;
+import net.zestyblaze.malusphaethusa.food.EnchantedGoldenMilk;
 import net.zestyblaze.malusphaethusa.food.GoldenBread;
 import net.zestyblaze.malusphaethusa.food.GoldenMilk;
-import net.zestyblaze.malusphaethusa.items.AppleCowSpawnEgg;
-import net.zestyblaze.malusphaethusa.items.EnchantedGoldenWheat;
-import net.zestyblaze.malusphaethusa.items.GoldenAppleCowSpawnEgg;
-import net.zestyblaze.malusphaethusa.items.GoldenWheat;
+import net.zestyblaze.malusphaethusa.items.*;
 
 public class ItemInit {
     public static void register() {
@@ -18,7 +16,9 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(MalusPhaethusa.MOD_ID, "golden_bread"), GoldenBread.GOLDEN_BREAD);
         Registry.register(Registry.ITEM, new Identifier(MalusPhaethusa.MOD_ID, "enchanted_golden_bread"), EnchantedGoldenBread.ENCHANTED_GOLDEN_BREAD);
         Registry.register(Registry.ITEM, new Identifier(MalusPhaethusa.MOD_ID, "golden_milk"), GoldenMilk.GOLDEN_MILK);
+        Registry.register(Registry.ITEM, new Identifier(MalusPhaethusa.MOD_ID, "enchanted_golden_milk"), EnchantedGoldenMilk.ENCHANTED_GOLDEN_MILK);
         Registry.register(Registry.ITEM, new Identifier(MalusPhaethusa.MOD_ID, "apple_cow_spawn_egg"), AppleCowSpawnEgg.APPLE_COW_SPAWN_EGG);
         Registry.register(Registry.ITEM, new Identifier(MalusPhaethusa.MOD_ID, "golden_apple_cow_spawn_egg"), GoldenAppleCowSpawnEgg.GOLDEN_APPLE_COW_SPAWN_EGG);
+        Registry.register(Registry.ITEM, new Identifier(MalusPhaethusa.MOD_ID, "enchanted_golden_apple_cow_spawn_egg"), EnchantedGoldenAppleCowSpawnEgg.ENCHANTED_GOLDEN_APPLE_COW_SPAWN_EGG);
     }
 }

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#g#",
+    "gMg",
+    "#g#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:gold_nugget"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    },
+    "M": {
+      "item": "malusphaethusa:golden_wheat"
+    }
+  },
+  "result": {
+    "item": "malusphaethusa:enchanted_golden_wheat",
+    "count": 1
+  }
+}
