@@ -51,6 +51,10 @@ public class EnchantedGoldenMilk {
             return stack.isEmpty() ? new ItemStack(Items.BUCKET) : stack;
         }
         @Override
+        public boolean hasGlint(ItemStack stack) {
+            return true;
+        }
+        @Override
         public void appendTooltip(ItemStack itemStack, World world, @NotNull List<Text> tooltip, TooltipContext tooltipContext) {
             tooltip.add(new TranslatableText("item.malusphaethusa.enchanted_golden_milk.tooltip")
                     .formatted(Formatting.DARK_GRAY)

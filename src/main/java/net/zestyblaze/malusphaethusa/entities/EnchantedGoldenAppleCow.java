@@ -16,10 +16,8 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 import net.zestyblaze.malusphaethusa.food.EnchantedGoldenMilk;
-import net.zestyblaze.malusphaethusa.food.GoldenMilk;
 import net.zestyblaze.malusphaethusa.init.EntityInit;
 import net.zestyblaze.malusphaethusa.items.EnchantedGoldenWheat;
-import net.zestyblaze.malusphaethusa.items.GoldenWheat;
 import org.jetbrains.annotations.NotNull;
 
 public class EnchantedGoldenAppleCow extends GoldenAppleCow implements SkinOverlayOwner {
