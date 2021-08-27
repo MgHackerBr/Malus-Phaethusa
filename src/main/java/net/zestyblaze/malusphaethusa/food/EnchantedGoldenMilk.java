@@ -25,7 +25,7 @@ import java.util.List;
 public class EnchantedGoldenMilk {
 
     public static final EnchantedGoldenMilkItem ENCHANTED_GOLDEN_MILK = new EnchantedGoldenMilkItem(new FabricItemSettings()
-            .rarity(Rarity.RARE)
+            .rarity(Rarity.EPIC)
             .maxCount(1)
             .group(MalusPhaethusa.MAIN_TAB)
     );
