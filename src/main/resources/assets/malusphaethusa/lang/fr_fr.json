@@ -1,0 +1,25 @@
+{
+  "itemGroup.malusphaethusa.main_tab": "Malus Phaethusa",
+
+  "item.malusphaethusa.golden_wheat": "Blé doré",
+  "item.malusphaethusa.enchanted_golden_wheat": "Blé doré enchanté",
+  "item.malusphaethusa.golden_bread": "Pain doré",
+  "item.malusphaethusa.enchanted_golden_bread": "Pain doré enchanté",
+  "item.malusphaethusa.golden_milk": "Seau de lait doré",
+  "item.malusphaethusa.enchanted_golden_milk": "Seau de lait enchanté",
+
+  "item.malusphaethusa.apple_cow_spawn_egg": "Œuf d'apparition de Vache Pomme",
+  "item.malusphaethusa.golden_apple_cow_spawn_egg": "Œuf d'apparition de Vache Pomme dorée",
+  "item.malusphaethusa.enchanted_golden_apple_cow_spawn_egg": "Œuf d'apparition de Vache Pomme dorée enchantée",
+
+  "entity.malusphaethusa.apple_cow": "Vache Pomme",
+  "entity.malusphaethusa.golden_apple_cow": "Vache Pomme dorée",
+  "entity.malusphaethusa.enchanted_golden_apple_cow": "Vache Pomme dorée enchantée",
+
+  "item.malusphaethusa.golden_wheat.tooltip": "Blé infusé avec de l'or et un peu de magie",
+  "item.malusphaethusa.enchanted_golden_wheat.tooltip": "Blé infusé avec de l'or et de poudre magique",
+  "item.malusphaethusa.golden_bread.tooltip": "Pain infusé avec de l'or et un peu de magie",
+  "item.malusphaethusa.enchanted_golden_bread.tooltip": "Pain infusé avec de l'or et de poudre magique",
+  "item.malusphaethusa.golden_milk.tooltip": "Lait récolté d'une vache qui brille",
+  "item.malusphaethusa.enchanted_golden_milk.tooltip": "Lait récolté d'une vache infusé avec de la magie"
+}
