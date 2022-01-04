@@ -14,11 +14,11 @@ import net.minecraft.client.texture.SpriteAtlasTexture;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.passive.CowEntity;
 import net.minecraft.util.math.Vec3f;
-import net.zestyblaze.malusphaethusa.blocks.AppleBlock;
+import net.zestyblaze.malusphaethusa.registry.MFBlockInit;
 import org.jetbrains.annotations.NotNull;
 
+@SuppressWarnings("deprecation")
 public class AppleCowFeatureRenderer<T extends CowEntity> extends FeatureRenderer<T, CowEntityModel<T>> {
-
     public AppleCowFeatureRenderer(FeatureRendererContext<T, CowEntityModel<T>> context) {
         super(context);
     }
@@ -30,7 +30,7 @@ public class AppleCowFeatureRenderer<T extends CowEntity> extends FeatureRendere
             boolean shouldRender = minecraftClient.hasOutline(entity) && entity.isInvisible();
             if(!entity.isInvisible() || shouldRender) {
                 BlockRenderManager blockRenderManager = minecraftClient.getBlockRenderManager();
-                BlockState blockState = AppleBlock.APPLE_BLOCK.getDefaultState();
+                BlockState blockState = MFBlockInit.APPLE_BLOCK.getDefaultState();
                 int renderAsModel = LivingEntityRenderer.getOverlay(entity, 0.0F);
                 BakedModel bakedModel = blockRenderManager.getModel(blockState);
                 matrices.push();

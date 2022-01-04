@@ -18,7 +18,7 @@ public class GoldenAppleCowEntityRenderer extends MobEntityRenderer<AppleCow, Co
 
     @Override
     public Identifier getTexture(AppleCow entity) {
-        return new Identifier(MalusPhaethusa.MOD_ID, "textures/entity/golden_apple_cow.png");
+        return new Identifier(MalusPhaethusa.MODID, "textures/entity/golden_apple_cow.png");
     }
 
 }

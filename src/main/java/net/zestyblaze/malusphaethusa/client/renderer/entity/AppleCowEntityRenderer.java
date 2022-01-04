@@ -18,6 +18,6 @@ public class AppleCowEntityRenderer extends MobEntityRenderer<AppleCow, CowEntit
 
     @Override
     public Identifier getTexture(AppleCow entity) {
-        return new Identifier(MalusPhaethusa.MOD_ID, "textures/entity/apple_cow.png");
+        return new Identifier(MalusPhaethusa.MODID, "textures/entity/apple_cow.png");
     }
 }

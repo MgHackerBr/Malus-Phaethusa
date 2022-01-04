@@ -1,30 +1,27 @@
 package net.zestyblaze.malusphaethusa;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.Identifier;
-import net.zestyblaze.malusphaethusa.init.BlockInit;
-import net.zestyblaze.malusphaethusa.init.EntityInit;
-import net.zestyblaze.malusphaethusa.init.ItemInit;
-import net.zestyblaze.malusphaethusa.init.SpawnInit;
-import net.zestyblaze.malusphaethusa.items.EnchantedGoldenWheat;
+import net.zestyblaze.malusphaethusa.config.MFModConfig;
+import net.zestyblaze.malusphaethusa.registry.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class MalusPhaethusa implements ModInitializer {
-
-	public static String MOD_ID = "malusphaethusa";
-
-	public static final ItemGroup MAIN_TAB = FabricItemGroupBuilder.build(
-			new Identifier(MOD_ID, "main_tab"),
-			() -> new ItemStack(EnchantedGoldenWheat.ENCHANTED_GOLDEN_WHEAT)
-	);
+	public static final String MODID = "malusphaethusa";
+	private static final String MODNAME = "Malus Phaethusa";
+	public static final Logger LOGGER = LogManager.getLogger(MODNAME);
 
 	@Override
 	public void onInitialize() {
-		EntityInit.register();
-		SpawnInit.register();
-		ItemInit.register();
-		BlockInit.register();
+		LOGGER.info("Malus Phaethusa is successfully installed! Thanks for downloading! <3");
+		MFConfigInit.registerConfig();
+		MFItemInit.registerItems();
+		MFBlockInit.registerBlocks();
+		MFEntityInit.registerEntities();
+		MFSpawnInit.registerSpawns();
+
+		if(MFModConfig.get().debugMode) {
+			LOGGER.info("Malus Phaethusa: Registry - Mod Fully Loaded!");
+		}
 	}
 }

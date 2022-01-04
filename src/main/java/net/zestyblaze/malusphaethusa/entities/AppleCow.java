@@ -15,7 +15,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
-import net.zestyblaze.malusphaethusa.init.EntityInit;
+import net.zestyblaze.malusphaethusa.registry.MFEntityInit;
 import org.jetbrains.annotations.NotNull;
 
 public class AppleCow extends CowEntity {
@@ -25,7 +25,7 @@ public class AppleCow extends CowEntity {
 
     @Override
     public AppleCow createChild(ServerWorld serverWorld, PassiveEntity passiveEntity) {
-        return EntityInit.APPLE_COW.create(serverWorld);
+        return MFEntityInit.APPLE_COW.create(serverWorld);
     }
 
     @Override

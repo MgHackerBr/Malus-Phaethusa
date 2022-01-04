@@ -21,5 +21,20 @@
   "item.malusphaethusa.golden_bread.tooltip": "Bread infused with gold and a little magic",
   "item.malusphaethusa.enchanted_golden_bread.tooltip": "Bread infused with gold and magic power",
   "item.malusphaethusa.golden_milk.tooltip": "Milk taken from a cow that shines",
-  "item.malusphaethusa.enchanted_golden_milk.tooltip": "Milk taken from a cow infused with magic"
+  "item.malusphaethusa.enchanted_golden_milk.tooltip": "Milk taken from a cow infused with magic",
+
+  "text.autoconfig.malusphaethusa.title": "Malus Phaethusa",
+  "text.autoconfig.malusphaethusa.option.debugMode": "Debug Mode",
+  "text.autoconfig.malusphaethusa.option.appleCow": "Apple Cow Spawn Options",
+  "text.autoconfig.malusphaethusa.option.appleCow.acSpawnWeight": "Spawn Weight",
+  "text.autoconfig.malusphaethusa.option.appleCow.acMinGroupSize": "Min Group Size",
+  "text.autoconfig.malusphaethusa.option.appleCow.acMaxGroupSize": "Max Group Size",
+  "text.autoconfig.malusphaethusa.option.goldenAppleCow": "Golden Apple Cow Spawn Options",
+  "text.autoconfig.malusphaethusa.option.goldenAppleCow.gacSpawnWeight": "Spawn Weight",
+  "text.autoconfig.malusphaethusa.option.goldenAppleCow.gacMinGroupSize": "Min Group Size",
+  "text.autoconfig.malusphaethusa.option.goldenAppleCow.gacMaxGroupSize": "Max Group Size",
+  "text.autoconfig.malusphaethusa.option.eGoldenAppleCow": "Enchanted Golden Apple Cow Spawn Options",
+  "text.autoconfig.malusphaethusa.option.eGoldenAppleCow.egacSpawnWeight": "Spawn Weight",
+  "text.autoconfig.malusphaethusa.option.eGoldenAppleCow.egacMinGroupSize": "Min Group Size",
+  "text.autoconfig.malusphaethusa.option.eGoldenAppleCow.egacMaxGroupSize": "Max Group Size"
 }

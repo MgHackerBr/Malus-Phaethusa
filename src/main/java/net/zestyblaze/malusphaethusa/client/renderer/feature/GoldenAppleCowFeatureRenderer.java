@@ -15,10 +15,11 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.passive.CowEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.Vec3f;
-import net.zestyblaze.malusphaethusa.blocks.GoldenAppleBlock;
-import net.zestyblaze.malusphaethusa.init.EntityInit;
+import net.zestyblaze.malusphaethusa.registry.MFBlockInit;
+import net.zestyblaze.malusphaethusa.registry.MFEntityInit;
 import net.zestyblaze.malusphaethusa.mixin.ItemRendererAccessor;
 
+@SuppressWarnings("deprecation")
 public class GoldenAppleCowFeatureRenderer<T extends CowEntity> extends FeatureRenderer<T, CowEntityModel<T>> {
 
     public static ItemStack stack;
@@ -35,7 +36,7 @@ public class GoldenAppleCowFeatureRenderer<T extends CowEntity> extends FeatureR
             boolean shouldRender = minecraftClient.hasOutline(entity) && entity.isInvisible();
             if (!entity.isInvisible() || shouldRender) {
                 BlockRenderManager blockRenderManager = minecraftClient.getBlockRenderManager();
-                BlockState blockState = GoldenAppleBlock.GOLDEN_APPLE_BLOCK.getDefaultState();
+                BlockState blockState = MFBlockInit.GOLDEN_APPLE_BLOCK.getDefaultState();
                 int renderAsModel = LivingEntityRenderer.getOverlay(entity, 0.0F);
                 BakedModel bakedModel = blockRenderManager.getModel(blockState);
                 matrices.push();
@@ -64,7 +65,7 @@ public class GoldenAppleCowFeatureRenderer<T extends CowEntity> extends FeatureR
             blockRenderManager.getModelRenderer().render(matrices.peek(), vertexConsumers.getBuffer(RenderLayer.getOutline(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE)), appleState, appleModel, 0.0F, 0.0F, 0.0F, light, overlay);
         }
         else {
-            if(entity.getType() == EntityInit.GOLDEN_APPLE_COW){
+            if(entity.getType() == MFEntityInit.GOLDEN_APPLE_COW){
                 blockRenderManager.renderBlockAsEntity(appleState, matrices, vertexConsumers, light, overlay);
             }
 
